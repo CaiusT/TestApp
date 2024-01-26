@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.321" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.testapp.ProjectTabController">
+   <center>
+      <BorderPane style="-fx-background-color: #FFFFFF; -fx-background-radius: 5; -fx-border-radius: 5;" BorderPane.alignment="CENTER">
+         <top>
+            <BorderPane style="-fx-background-color: #98CA48; -fx-background-radius: 10; -fx-border-color: #98CA48; -fx-border-radius: 10;" BorderPane.alignment="CENTER">
+               <top>
+                  <Label text="PHASES" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Tahoma Bold" size="14.0" />
+                     </font>
+                     <BorderPane.margin>
+                        <Insets bottom="2.0" top="2.0" />
+                     </BorderPane.margin>
+                  </Label>
+               </top>
+               <center>
+                  <ListView style="-fx-background-radius: 0 0 5 5; -fx-border-radius: 0 0 5 5;" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </BorderPane.margin>
+                  </ListView>
+               </center>
+               <BorderPane.margin>
+                  <Insets bottom="15.0" left="5.0" right="5.0" top="5.0" />
+               </BorderPane.margin>
+            </BorderPane>
+         </top>
+         <center>
+            <Accordion BorderPane.alignment="CENTER">
+               <panes>
+                  <TitledPane alignment="CENTER" animated="false" stylesheets="@titled_pane_stylesheet.css" text="PAYMENTS">
+                     <font>
+                        <Font name="Tahoma Bold" size="14.0" />
+                     </font>
+                  </TitledPane>
+                  <TitledPane alignment="CENTER" animated="false" graphicTextGap="0.0" stylesheets="@titled_pane_stylesheet.css" text="COMMERCIAL PROPOSALS">
+                     <font>
+                        <Font name="Tahoma Bold" size="14.0" />
+                     </font>
+                  </TitledPane>
+                  <TitledPane alignment="CENTER" animated="false" stylesheets="@titled_pane_stylesheet.css" text="DOCUMENTS">
+                     <font>
+                        <Font name="Tahoma Bold" size="14.0" />
+                     </font>
+                  </TitledPane>
+                  <TitledPane alignment="CENTER" animated="false" stylesheets="@titled_pane_stylesheet.css" text="PLANS">
+                     <font>
+                        <Font name="Tahoma Bold" size="14.0" />
+                     </font>
+                     <content>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0">
+                           <center>
+                              <ListView fx:id="planList" style="-fx-background-color: #999999; -fx-background-radius: 0 0 10 10; -fx-border-color: #999999; -fx-border-radius: 0 0 10 10; -fx-border-style: solid inside;" BorderPane.alignment="CENTER">
+                                 <BorderPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </BorderPane.margin>
+                              </ListView>
+                           </center>
+                           <top>
+                              <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #98CA48; -fx-border-color: #98CA48; -fx-background-radius: 5; -fx-border-radius: 5;" text="ADD PLAN" BorderPane.alignment="CENTER">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </padding>
+                                 <BorderPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </BorderPane.margin>
+                              </Button>
+                           </top>
+                        </BorderPane>
+                     </content>
+                  </TitledPane>
+               </panes>
+               <BorderPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" />
+               </BorderPane.margin>
+            </Accordion>
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,42 @@
+.titled-pane > .title {
+    -fx-background-color:  #98CA48;
+}
+.financeiro_list.tab {
+    -fx-background-color:  #98CA48;
+    -fx-font: 12px "Venus Rising"
+}
+.financeiro_list.tab-pane {
+    -fx-background-color:  #98CA48;
+}
+.project_list.tab {
+    -fx-background-color:  #63852d;
+    -fx-font: 12px "Venus Rising"
+}
+.project_list.tab:selected {
+    -fx-background-color:  #98CA48;
+    -fx-font: 12px "Venus Rising"
+}
+.project_list.tab-pane {
+    -fx-background-color:  #98CA48;
+}
+.list-cell:selected {
+    -fx-background-color:  #98CA48;
+    -fx-text-fill:  #313A42;
+}
+.financeiro_list-cell:selected {
+    -fx-text-fill: #000000;
+}
+.document_tab .tab-label {
+    -fx-rotate: 90;
+    -fx-font: 12px "Venus Rising"
+}
+.document_tab {
+    -fx-padding: 3em 0.2em 3em 0.2em;
+}
+.check-box .box {
+
+    -fx-background-color: white;
+    -fx-border-color:#98CA48;
+    -fx-border-radius:3px; 
+    
+    }
